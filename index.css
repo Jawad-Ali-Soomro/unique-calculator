@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Round&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-size: 800% 800%;
+}
+
+.calculator {
+min-width: 273px;
+min-height: 448px;
+border: 1px solid rgba(0, 0, 0, 0.15);
+font-family: Nova Round;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+border-radius: 10px;
+}
+
+.screen {
+width: 233px;
+height: 91px;
+color: black;
+margin: 20px 20px 20px 20px;
+border: 1px solid rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+}
+
+.screenContent {
+text-align: end;
+padding: 17px;
+font-size: 30px;
+}
+
+#result {
+font-size: 30px;
+line-height: 36px;
+margin-bottom: 5px;
+overflow: auto;
+user-select: all;
+}
+
+#resultText {
+color: black !important;
+}
+
+.calculation {
+font-size: 12px;
+line-height: 14px;
+color: black;
+overflow: auto;
+}
+
+.numPad {
+width: 233px;
+height: 296px;
+margin: 20px 20px 20px 20px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 19px;
+grid-row-gap: 19px;
+}
+
+.style {
+border: 1px solid rgba(0, 0, 0, 0.15);
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.styleOnClick {
+font-size: 20px;
+opacity: 0.8;
+}
+
+.zero {
+width: 107px;
+height: 44px;
+grid-area: 5 / 1 / 6 / 3;
+}
+
+.equal {
+width: 44px;
+height: 170px;
+grid-area: 3 / 4 / 6 / 5;
+}
